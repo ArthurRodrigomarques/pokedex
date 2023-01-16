@@ -7,7 +7,7 @@ const Pokemon = (props) => {
     const onHeartClick = () => {
       updateFavoritePokemons(pokemon.name)
     }
-    const heart = favoritePokemons.includes(pokemon.name) ? "❤️" : "🖤";
+    const heart =favoritePokemons.includes(pokemon.name) ? "❤️" : "🖤";
   return (
     <div className='pokemon-card'>
       <div className='pokemon-image-container'>
@@ -36,6 +36,3 @@ const Pokemon = (props) => {
 export default Pokemon
 
 
-
-// 2:31:07 
-// Pokedex com API, React hooks, useState, useContext, localStorage
