@@ -8,6 +8,9 @@ const Pokemon = (props) => {
       updateFavoritePokemons(pokemon.name)
     }
     const heart =favoritePokemons.includes(pokemon.name) ? "❤️" : "🖤";
+
+
+    
   return (
     <div className='pokemon-card'>
       <div className='pokemon-image-container'>
@@ -36,3 +39,6 @@ const Pokemon = (props) => {
 export default Pokemon
 
 
+// buscar o tipo
+// falar para o tipo qual background ele deve entrar
+// botar o background

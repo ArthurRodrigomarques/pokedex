@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
 nav {
   height: 100px;
   display: flex;
@@ -77,6 +81,8 @@ nav {
   display: flex;
   box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
   border-radius: 3px;
+  color: black;
+  background-color: white;
 }
 .pokemon-image {
   width: 70px;
