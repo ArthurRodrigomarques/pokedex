@@ -9,10 +9,49 @@ const Pokemon = (props) => {
     }
     const heart =favoritePokemons.includes(pokemon.name) ? "❤️" : "🖤";
 
-
+    const backgroundColor = () => {
+      switch (pokemon.types[0].type.name) {
+        case "fire":
+          return "red";
+        case "water":
+          return "rgb(47, 112, 211)";
+        case "grass":
+          return "green";
+        case "electric":
+          return "yellow";
+        case "bug":
+          return "rgb(47, 211, 88)";
+        case "poison":
+          return "rgb(164, 47, 211)"
+        case "ground":
+          return "rgb(165, 51, 51)";
+        case "fairy":
+          return "pink"
+        case "fighting":
+          return "#a04e38"
+        case "psychic":
+          return "#571454"
+        case "ghost":
+          return "#571454"
+        case "rock":
+          return "#98865e"
+        case "ice":
+          return "#cef3f4"
+        case "dragon":
+          return "#5b7cb3"
+        case "dark":
+          return "#5c5e63"
+        case "steel":
+          return "#acb2c0"
+        case "flying":
+          return "#6f9cdd"
+        default:
+          return "gray";
+      }
+    };
     
   return (
-    <div className='pokemon-card'>
+    <div style={{ backgroundColor: backgroundColor(), padding: "10px" }}  className='pokemon-card'>
       <div className='pokemon-image-container'>
         <img className='pokemon-image' src={pokemon.sprites.front_default} alt={pokemon.name} />
       </div>
