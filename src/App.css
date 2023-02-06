@@ -93,6 +93,19 @@ nav {
   width: 70px;
   height: 70px;
   margin-right: 10px;
+  animation: move 2s infinite linear;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(10px);
+}
+100% {
+    transform: translateY(0);
+}
+
 }
 .pokemon-image-container {
   padding: 0px 5px;
